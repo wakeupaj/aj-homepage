@@ -1,0 +1,142 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background-color: #121212;
+    color: #ffffff
+}
+
+h1 {
+    text-align: center;
+}
+
+#intro {
+    transition: transform 1s ease;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#intro.to-header {
+    transform: translate(-50%, -45vh);
+}
+
+#menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease;
+    pointer-events: none;
+}
+
+#menu.show {
+    display: flex;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+#menu .nav-link {
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0.5rem;
+    border: 2px solid #7d0f44;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    transition: border 0.3s ease;
+}
+
+#menu .nav-link:hover {
+    background-color: #7d0f44;
+    border: 2px solid #12a2c9;
+    color: #ffffff;
+}
+
+.image-container {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+#image1 {
+    position: absolute;
+    top: 475px;
+    left: 250px;
+    max-height: 40%;
+    max-width: 40%;
+    border-radius: 100px;
+    border: 2px solid #7d0f44;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    transition: border 0.3s ease;
+}
+
+#image1:hover {
+    border: 2px solid #12a2c9;
+}
+
+#image2 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    max-height: 40%;
+    max-width: 40%;
+    border-radius: 100px;
+    border: 2px solid #7d0f44;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    transition: border 0.3s ease;
+}
+
+#image2:hover {
+    border: 2px solid #12a2c9;
+}
+
+#image3 {
+    position: absolute;
+    top: 475px;
+    right: 250px;
+    max-height: 40%;
+    max-width: 40%;
+    border-radius: 100px;
+    border: 2px solid #7d0f44;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    transition: border 0.3s ease;
+}
+
+#image3:hover {
+    border: 2px solid #12a2c9;
+}
+
+#image4 {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    max-height: 40%;
+    max-width: 40%;
+    border-radius: 100px;
+    border: 2px solid #7d0f44;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    transition: border 0.3s ease;
+}
+
+#image4:hover {
+    border: 2px solid #12a2c9;
+}
+
+#image5 {
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translateX(-45%);
+    max-height: 17%;
+    max-width: 17%;
+
+}

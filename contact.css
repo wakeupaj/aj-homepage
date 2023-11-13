@@ -1,0 +1,110 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background-color: #121212;
+    color: #ffffff
+}
+
+h1 {
+    text-align: center;
+}
+
+#menu {
+    top: 12%;
+    position: relative;
+    }
+
+    #menu .nav-link {
+        background-color: #121212;
+        color: #ffffff;
+        margin: 0.5rem;
+        border: 2px solid #7d0f44;
+        border-radius: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        text-transform: uppercase;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        transition: border 0.3s ease;
+        }
+
+    #menu .nav-link:hover {
+          background-color: #7d0f44;
+          border: 2px solid #12a2c9;
+          color: #ffffff;
+    }
+
+#contact {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#contacts {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#contacts .nav-link {
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0.5rem;
+    border: 2px solid #12a2c9;
+    border-radius: 0.5rem;
+    padding: 0.75rem 7rem;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease, border 0.3s ease, background-image 0.3s ease;
+    }
+
+    #ig {
+        position: relative;
+        z-index: 1;
+        background: #121212;
+        border: 2px solid transparent;
+        transition: border-color 0.3s ease;
+      }
+
+      #ig::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(circle at 30% 107%,
+          #fdf497 0%, #fdf497 5%,
+          #fd5949 45%, #d6249f 60%,
+          #285AEB 90%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        border-radius: inherit;
+      }
+
+      #ig:hover::before {
+        opacity: 1;
+      }
+
+      #ig:hover {
+        border-color: #12a2c9;
+      }
+
+      #discord:hover {
+        background-color: #5865F2;
+      }
+
+      #x:hover {
+        background-color: #000000;
+      }
+
+      #email:hover {
+        background-color: #7d0f44
+      }
+
